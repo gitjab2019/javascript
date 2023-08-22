@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TP 1</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <h1>TP 1</h2>
+
+    <h2>1- Recibir una edad y mostrar si es mayor de edad o no.</h2>
+    <br>
+
+    <label for="numero1">Ingresar Edad a Evaluar:</label>
+    <input type="number" id="numero1" name="numero1">
+    <button onclick="verificarEdad()">Ver Edad</button>
+    <div id="resultado"></div>
+    <br>
+
+   <!-- #region -->
+   <br>
+   <h2>2. Rangos de Calificación:</h2>
+    <ol>
+        <li>0-3: Muy deficiente</li>
+        <li>3-5: Insuficiente</li>
+        <li>5-6: Suficiente</li>
+        <li>6-7: Bien</li>
+        <li>7-9: Notable</li>
+        <li>9-10: Sobresaliente</li>
+    </ol>
+   <!-- #endregion -->
+   <br>
+
+   <label for="nota">Ingresar Nota a Evaluar:</label>
+   <input type="number" id="nota" name="nota">
+   <button onclick="calificarNota()">Validar Nota</button>
+   <div id="calificacion"></div>
+
+   <br>
+   <h2>3- Realiza un script que pida por teclado 3 edades y 3 nombres e indique el
+    nombre del mayor.
+   </h2>
+   <label for="name1">Nombre:</label>
+   <input type="text" id="name1" name="name1">
+   <label for="name1">Edad:</label>
+   <input type="number" id="number1" name="number1">
+   <br>
+   <br>
+   <label for="name2">Nombre:</label>
+   <input type="text" id="name2" name="name2">
+   <label for="name2">Edad:</label>
+   <input type="number" id="number2" name="number2">
+   <br>
+   <br>
+   <label for="name3">Nombre:</label>
+   <input type="text" id="name3" name="name3">
+   <label for="name3">Edad:</label>
+   <input type="number" id="number3" name="number3">
+   <br>
+   <br>
+   <button onclick="checkAges()">Evaluar Edades</button>
+   <div id="numMayor"></div>
+   <br>
+   <br>
+   <h2>4. Realiza un script que pida un texto y lo muestre en mayúsculas.</h2>
+   <br>
+
+
+   <label for="texto">Ingresar Una Frase:</label>
+   <input type="text" id="textoIngresado" name="textoIngresado">
+   <button onclick="pasarAMayusculas()">Pasar a Mayúsculas</button>
+   <div id="textoEnMayuscula"></div>
+   <br>
+
+    
+
+    <br>
+    <h2>5. Realiza un script que escriba una pirámide del 1 al 30 de la siguiente forma :</h2>
+  
+    <div>1</div>
+    <div>22</div>
+    <div>333</div>
+    <br>
+    <button onclick="crearPiramide()">Generar Pirámide de Números</button>
+    <br>
+    <div id="miElemento"></div>
+    <br>
+
+    <br>
+    <h2>6.Realiza un script que escriba los números del 1 al 500, que indique cuáles son
+        múltiplos de 4 y de 9.</h2>
+  
+   
+    <button onclick="crearSerie()">Generar Múltiplos de 4 y 9</button>
+    <br>
+    <div id="misMultiplos"></div>
+    <br>
+
+    <h2>7- Realiza un script que pida números hasta que se ingrese 0</h2>
+    <br>
+    <input type="text" id="aText" name="aText">
+    <button onclick="ingresarNumerosToCero()">Add</button>
+    <button onclick="clearInput()">Clear</button>
+    <div id="sumaTotal"></div>
+    <div id="listaNumbers"></div>
+   
+    <br>
+    <h2>8-Realiza un script que pida cadenas de texto hasta que se ingrese “fin”</h2>
+    <br>
+    <input type="text" id="aString" name="aString">
+    <button onclick="addPalabras('aString','listaStrings')">Add</button>
+    <button onclick="clearCadenas()">Clear</button>
+
+    <div id="listaStrings"></div>
+    <br>
+    
+    <br>
+    <h2>9- Realiza un script que cuente el número de vocales que tiene un texto.
+    </h2>
+    <br>
+    <input type="text" id="unTexto" name="unTexto">
+    <button onclick="contarVocales('unTexto')">Contar Vocales</button>
+    <button onclick="clearTexto('unTexto')">Clear</button>
+
+    <div id="totalVocales"></div>
+    <br>
+    
+    <h2>10- Realiza un script que pida una cadena de texto y la devuelva al revés
+    </h2>
+    <br>
+    <input type="text" id="miCadena" name="miCadena">
+    <button onclick="invertirCadena('miCadena')">Invertir Cadena</button>
+    <button onclick="clearTexto('miCadena')">Clear</button>
+
+    <div id="cadenaInvertida"></div>
+    <br>
+
+    <h2>11- Crea un programa que calcule el área de un círculo. 
+    </h2>
+    <br>
+    <input type="text" id="miRadio" name="miRadio">
+    <button onclick="areaCirculo('miRadio')">Calcular Área del Círculo</button>
+    <button onclick="clearTexto('miRadio')">Clear</button>
+
+    <div id="areaCirculo"></div>
+    <br>
+
+    <h2>12- Crea un programa que verifique si un número ingresado por el usuario es
+        positivo, negativo o cero.        
+    </h2>
+    <br>
+    <input type="text" id="numeroDado" name="numeroDado">
+    <button onclick="evaluarNumero('numeroDado')">Evaluar Número</button>
+    <button onclick="clearTexto('numeroDado')">Clear</button>
+
+    <div id="evaluacion"></div>
+    <br>
+    <h2>13- Crea un programa que tome un arreglo de nombres ingresados por el usuario
+        y muestre la lista ordenada alfabéticamente</h2>
+    <br>
+    <input type="text" id="unaPalabra" name="unaPalabra">
+    <button onclick="addPalabras('unaPalabra','listaDePalabras')">Add</button>
+    <button onclick="clearTexto('unaPalabra')">Clear</button>
+    <button onclick="ordenarLista()">Ordenar Lista</button>
+
+    <div id="listaDePalabras"></div>
+    <br>
+    <div id="listaOrdenada"></div>
+    <br>
+    <h2>14- Crea un programa que encuentre el número más pequeño y el más grande en
+        un arreglo de números ingresados por el usuario.
+    </h2>
+    <br>
+    <input type="number" id="aNumber" name="aNumber">
+    <button onclick="addNumbers()">Add</button>
+    <button onclick="clearNumbers()">Clear</button>
+    <button onclick="getMayor()">Mayor</button>
+    <button onclick="getMenor()">Menor</button>
+    <button onclick="restart()">Reiniciar Serie</button>
+
+    <div id="numbersList"></div>
+    <div id="minor"></div>
+    <div id="mayor"></div>
+    <br>
+    <h2>15- Crea un programa que tome una frase ingresada por el usuario y cuente
+        cuántas palabras contiene.
+    </h2>
+    <br>
+    <input type="text" id="unText" name="unText">
+    <button onclick="contarPalabras('unText')">Contar Palabras</button>
+    <button onclick="clearTexto('unText')">Clear</button>
+    <br>
+    <div id="cantidadDePalabras"></div>
+    <script src="index.js"></script>
+</body>
+</html>
